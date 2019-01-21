@@ -1,0 +1,11 @@
+.not-found-page{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.not-found-page img{
+    height: auto;
+    width: 100%;
+    display: block;
+}
