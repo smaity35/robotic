@@ -2,8 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
@@ -27,6 +29,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     BlogPageComponent,
     ContactPageComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,7 +37,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
       apiKey: 'AIzaSyD1uFCjRS7v6w_5m0mGxZP4-kLpnzFDaO8'
     })
   ],
-  providers: [],
+  //providers:[{provide: LocationStrategy, useClass:HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

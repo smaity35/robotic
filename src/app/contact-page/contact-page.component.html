@@ -21,9 +21,15 @@
     <div class="row">
       
 
-      <agm-map [latitude]="latitude" [longitude]="longitude">
+      <agm-map [zoom]="zoom" [latitude]="latitude" [longitude]="longitude">
         <agm-marker [latitude]="latitude" [longitude]="longitude">
           <agm-info-window>Kolkata</agm-info-window>
+        </agm-marker>
+        <agm-marker [latitude]="latitude1" [longitude]="longitude1">
+          <agm-info-window>Howrah</agm-info-window>
+        </agm-marker>
+        <agm-marker [latitude]="latitude2" [longitude]="longitude2">
+          <agm-info-window>Barasat</agm-info-window>
         </agm-marker>
       </agm-map>
 

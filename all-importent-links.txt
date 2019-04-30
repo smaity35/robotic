@@ -1,0 +1,18 @@
+///angular 6 refresh page 404///
+
+ANS: 
+
+tutorial link 01: https://www.youtube.com/watch?v=dlPwcNcMv04
+
+tutorial link 02: https://medium.com/wineofbits/angular-2-routing-404-page-not-found-on-refresh-a9a0f5786268
+
+1. Add import line and also add providers in to a app.module.ts file:
+
+import { HashLocationStrategy, LocationStrategy} from '@angular/common';
+
+providers:[{provide: LocationStrategy, useClass:HashLocationStrategy }],
+
+2. After build prod file, modyfy index.html to ( <base href="./">)
+
+
+/// ///
