@@ -1,5 +1,8 @@
 <app-header></app-header>
 
+
+
+
 <!-- start banner Area -->
 <section class="banner-area" id="home">
   <div class="container">
@@ -24,6 +27,18 @@
 <!-- End banner Area -->
 
 
+<table>
+  <tr>
+    <td>Sl</td>
+    <td>Name</td>
+    <td>Is Online?</td>
+  </tr>
+  <tr *ngFor="let social of social_data; let myIndex=index">
+    <td>{{myIndex}}</td>
+    <td>{{social.name}}</td>
+    <td>{{social.online}}</td>
+  </tr>
+</table>
 
 
 
@@ -310,5 +325,4 @@
   </div>	
 </section>
 <!-- End blog Area -->
-
 <app-footer></app-footer>

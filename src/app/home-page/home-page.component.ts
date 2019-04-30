@@ -33,4 +33,17 @@ export class HomePageComponent implements OnInit {
 
   }
 
+  social_data=[
+    {
+      name: 'soumen',
+      online: true
+    },
+    {
+      name: 'rahul',
+      online: false
+    }
+  ]
+
 }
+
+
